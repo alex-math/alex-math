@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.loader {
+position : fixed;
+z-index: 9999;
+background : url('img/loader2.gif') 50% 50% no-repeat;
+background-color: white;
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+}
+
+@media (min-width: 850px) {
+  .split-pane {
+    display: flex;
+    flex-wrap: no-wrap;
+    position: relative;
+  }
+}
+
+@media (max-width: 850px) {
+  .left > p img {
+    display:none;
+  }
+  .right > p img {
+    display:none;
+  }
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+}
+
+footer:hover {
+  height: 400px;
+  transition: all 200ms;
+}
+
+.left {
+  background-image: url(img/background_alexandre_mathonneau_developpeur.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  background-image: url(img/background_alexandre_mathonneau_compositeur.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.right,
+.left {
+  flex: 0 1 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right img,
+.left img {
+  width: 58px;
+}
+
+.right button,
+.left button {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  min-width: 12em;
+  padding: 0.7em;
+  font-size: 1.3em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  transition: all 200ms;
+}
+
+.right button:hover,
+.left button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.right button:hover {
+  color: grey
+}
+
+.left button:hover {
+  color: violet
+}
+
+@media (min-width: 850px) {
+  .right,
+  .left {
+    flex: 0 1 50%;
+    height: 100vh;
+  }
+}
+
+.logo img {
+  width: 80px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 45%;
+}
+
+.text-content {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.text-content p {
+  margin: 0;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
+.big {
+  font-size: 2.3rem;
+  font-weight:800;
+  text-transform: uppercase;
+}
