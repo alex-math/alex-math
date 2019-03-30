@@ -5,14 +5,20 @@
 <head>
     <meta charset="utf-8" />    
     <link rel="shortcut icon" href="img/alexandre_mathonneau_favicon.ico" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" />
+	<link href="jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href="buttonLoader.css" rel="stylesheet" type="text/css">
     <title>Alexandre Mathonneau</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript">
-$(window).load(function() {
-	$(".loader").fadeOut("1000");
-})
-</script>
+		<script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("1000");
+		})
+	</script>
 </head>
 
 <body>
@@ -29,7 +35,7 @@ $(window).load(function() {
       <p class="big">SOFTWARE DEVELOPER</p>
     </div>
     <a href="CV/cv_alexandre_mathonneau.html">
-    	<button>Watch my CV</button>
+    	<button class="btn has-spinner">Watch my CV</button>
     </a>
   </div>
   <div class="right">
@@ -41,16 +47,45 @@ $(window).load(function() {
       <p class="big">COMPOSER</p>
     </div>
     <a href="http://www.alexandremathonneau.com">    
-    	<button>Discover my compositions</button>
+    	<button class="btn has-spinner">Discover my compositions</button>
     </a>
   </div>
   <div class="logo">
-  		<img src="img/alexandre_mathonneau_icone_abeille_milieu_1.png"/>
+  		<a href="#mon_ancre"><img src="img/alexandre_mathonneau_icone_abeille_milieu_1.png"/></a>
   </div>
 </section>
 
-    <footer>
+    <footer id="mon_ancre">
     	<iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/740860596&color=%23565656&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
     </footer>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.buttonLoader.js"></script>
+<script>
+$(document).ready(function () {
+    
+    $('.has-spinner').click(function () {
+        var btn = $(this);
+        $(btn).buttonLoader('start');
+        setTimeout(function () {
+            $(btn).buttonLoader('stop');
+        }, 3000);
+    });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </body>
