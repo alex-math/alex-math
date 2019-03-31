@@ -9,7 +9,7 @@ body {
 .loader {
 position : fixed;
 z-index: 9999;
-background : url('img/loader7.gif') 50% 50% no-repeat;
+background : url('img/loader6.gif') 50% 50% no-repeat;
 background-color: #A861EF;
 top : 0px;
 left : 0px;
@@ -110,18 +110,9 @@ cursor : wait;
   color: violet
 }
 
-.spinner {
-    /*display: inline-block;
-    opacity: 0;
-    width: 0;
-    -webkit-transition: opacity 0.25s, width 0.25s;
-    -moz-transition: opacity 0.25s, width 0.25s;
-    -o-transition: opacity 0.25s, width 0.25s;
-    transition: opacity 0.25s, width 0.25s;*/
-}
-
 .has-spinner.active {
     cursor:progress;
+    background-color: white;
 }
 
 .has-spinner.active .spinner {
