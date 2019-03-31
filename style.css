@@ -9,8 +9,8 @@ body {
 .loader {
 position : fixed;
 z-index: 9999;
-background : url('img/loader2.gif') 50% 50% no-repeat;
-background-color: white;
+background : url('img/loader7.gif') 50% 50% no-repeat;
+background-color: #A861EF;
 top : 0px;
 left : 0px;
 height : 100%;
@@ -39,12 +39,13 @@ cursor : wait;
   .right > p img {
     display:none;
   }
-  #mon_ancre {
+  footer iframe {
     display: none;
   }
   .logo img:hover {
     cursor: default;
   }
+
 }
 
 .player {
