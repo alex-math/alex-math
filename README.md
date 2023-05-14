@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @alex-math
-- 👀 I’m interested in applications design pattern
+- 👀 I’m interested in applications design pattern, SOLID...
 - 🌱 I’m currently learning JavaEE and Angular
-- 💞️ I’m looking to collaborate on ...front end projects
+- 💞️ I’m looking to collaborate on eco-responsible projects
 
 <!---
 alex-math/alex-math is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
