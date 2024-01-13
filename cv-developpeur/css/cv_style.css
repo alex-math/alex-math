@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'Aaargh'; 
+    src: url('../fonts/Aaargh-webfont.eot') format('embedded-opentype'),
+         url('../fonts/Aaargh-webfont.woff') format('woff'),
+         url('../fonts/Aaargh-webfont.ttf') format('truetype'),
+         url('../fonts/Aaargh-webfont.svg') format('svg');
+}
+
+.loader {
+position : fixed;
+z-index: 9999;
+background : url('../img/loader6.gif') 50% 50% no-repeat;
+background-color: grey;
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+}
+
+.descritpion {
+  display: none;
+}
+
+@media all and (max-width: 1350px) and (min-width: 1000px)
+{
+	body
+	{
+		font-size: 80%;
+	}
+
+	section a::after
+	{
+		content: " " url(../img/icone_hyperlien-blanc-mini_cv_alexandre_mathonneau.png);
+	}
+}
+
+@media all and (max-width: 1000px)
+{
+	body
+	{
+		font-size: 100%;
+	}
+	header
+	{
+		display: inline-flex;
+	    align-content: space-around;
+    	justify-content: space-between;
+    	min-width: 220px;
+	}
+
+	#text_header
+	{
+		margin: auto;
+	}
+
+	#adresse_header
+	{
+		display: none;
+	}
+
+	#photo_id
+	{
+		margin-right: 15px;
+	}
+
+	section
+	{
+    	flex-flow: row wrap;
+		margin-left: 10px;
+	}
+
+	section a::after
+	{
+		content: " " url(../img/icone_hyperlien-blanc_cv_alexandre_mathonneau.png);
+	}
+
+	.experiences, .formation, .competences
+	{
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+	footer
+	{
+    	border: 4px solid gray;
+		border-radius: 20px;
+    	padding: 12px;
+		margin-left: 10px;
+		margin-right: 10px;
+    	margin-bottom: 15px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: auto;
+	}
+}
+
+@media all and (min-width: 1000px)
+{
+	footer
+	{
+		display: none;
+	}
+
+	#address_header
+	{
+		margin: auto;
+		text-align: right;
+		justify-content: space-around;
+	}
+
+	section a::after
+	{
+		content: " " url(../img/icone_hyperlien-blanc_cv_alexandre_mathonneau.png);
+	}
+}
+
+@media all and (max-width: 710px)
+{
+	body
+	{
+		font-size: 80%;
+	}
+
+	section a::after
+	{
+		content: " " url(../img/icone_hyperlien-blanc_cv_alexandre_mathonneau.png);
+	}
+}
+
+@media all and (max-width: 616px)
+{
+	#photo_id
+	{
+		margin-top: 15px;
+	}
+}
+
+#bloc_page
+{
+	margin: auto;
+	width: 100%;
+}
+
+body
+{
+    background: url("../img/background1.jpg") fixed;
+    font-family: Aaargh, verdana, sans-serif;
+    color: white;
+}
+
+h1, h2, h3
+{
+	text-align: center;
+	margin: auto;
+}
+
+a
+{
+	color: white;
+}
+
+header
+{
+    background: url("../img/background1.jpg") fixed;
+    border: 4px solid gray;
+	border-radius: 20px;
+    padding: 12px;
+	margin-left: 10px;
+	margin-right: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 10px;
+}
+
+#text_header
+{
+	display: block;
+	float: left;
+	flex-direction: row;
+}
+
+address
+{
+	display: flex;
+	text-align: right;
+    justify-content: space-around;
+	align-content: center;
+}
+
+#photo_id
+{
+	margin-left: 30px;
+	position: relative;
+}
+
+
+/*---------animation ligne autour photo id---------*/
+
+.bb, .bb::before, .bb::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bb {
+  width: 111px;
+  height: 148px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  color: silver;
+  box-shadow: inset 0 0 0 1px rgba(128, 128, 128, 0.5);
+}
+.bb::before, .bb::after {
+  content: '';
+  z-index: -1;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
+}
+.bb::before {
+  animation-delay: -4s;
+}
+
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 122px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 160px, 0px);
+  }
+  50% {
+    clip: rect(158px, 122px, 160px, 0px);
+  }
+  75% {
+    clip: rect(0px, 122px, 160px, 120px);
+  }
+}
+/*----------------------------------------------------*/
+
+
+/*---------animation clignotement photo id---------*/
+
+@keyframes blink {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+.bb {
+    animation: blink normal 3s  ease-in-out; /* Opera and prob css3 final iteration */
+}
+/*----------------------------------------------------*/
+
+
+section
+{
+	display: flex;
+    flex-direction : row;
+	justify-content: space-around;
+	margin-left: 10px;
+}
+
+section a
+{
+	text-decoration-line: none;
+}
+
+section a:hover
+{
+	border-bottom: 1px solid;
+}
+
+.experiences, .formation, .competences
+{
+	background: url("../img/paragraph_bgd1.jpg") scroll;
+	margin-right: 15px;
+	min-width: 220px;
+	padding-right: 10px;
+    word-wrap: break-word;
+}
+
+.experiences
+{
+	order: 3;
+	flex-shrink: 1.1;
+}
+
+.formation
+{
+	order: 2;
+	flex-shrink: 0.8;
+}
+
+.competences
+{
+	order: 1;
+	flex-shrink: 0.7;
+}
+
+li:last-child {
+	margin-bottom: 30px;
+}
+
+.logo_info
+{
+	height: 25px;
+	width: 29px;
+}
+
+.logo_titres
+{
+	height: 35px;
+	width: 27px;
+}
