@@ -9,6 +9,7 @@ Feel free to visit my public repositories. You can also visit the Github Pages o
 - <a href="https://alex-math.github.io/alex-math/" target="_blank">My showcase site</a>
 - <a href="https://alex-math.github.io/ocr-apprenez_a_programmer_avec_javascript/" target="_blank">An OpenClassrooms tutorial for a mainly static website</a>
 - <a href="https://alex-math.github.io/ocr-creez_des_pages_web_dynamiques_avec_javascript/" target="_blank">An OpenClassrooms tutorial for a dynamic website</a>
+
 These pages are under construction. Thank you for your understanding 😉
 
 <!---
