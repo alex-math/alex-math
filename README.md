@@ -1,9 +1,9 @@
 <h1 align="center">Welcome to my Github</h1>
 
--👋 Hi, I’m @alex-math
--👀 I’m interested in applications design pattern, SOLID...
--🌱 I’m currently learning JavaEE and ReactJS
--💞️ I’d love to collaborate on eco-responsible projects
+👋 Hi, I’m @alex-math\
+👀 I’m interested in applications design pattern, SOLID...\
+🌱 I’m currently learning JavaEE and ReactJS\
+💞️ I’d love to collaborate on eco-responsible projects\
 
 Feel free to visit my public repositories. You can also visit the Github Pages of some of them :
 - <a href="https://alex-math.github.io/alex-math/" target="_blank">My showcase site</a>
